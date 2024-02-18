@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login__main, .home__main, .tickets__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login__form__container, .home__container, .tickets__container {
+  border-radius: 20px;
+  background-color: lightpink;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.tickets__container {
+  background-color: #fff;
+}
+
+.login__header, .home__space__header, .home__create__ticket, .tickets__header {
+  margin-bottom: 15px;
+}
+
+.login__form, .home__ticket__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.spaceIdInputLabel, .create__ticket__input__label {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.login__form > input, .home__ticket__form > .create__ticket__input, .tickets__close {
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.spaceIdSubmit, .create__ticket__parking__spot, .tickets__close {
+  cursor: pointer;
+  background-color: lightskyblue;
+}
+
+.login__spaceError {
+  font-size: 12px;
+  color: red;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: 10px 0;
+}
+
+.home__slot__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.home__slot__floor {
+  margin-bottom: 5px;
+}
+
+.home__slot__header {
+  margin-bottom: 10px;
+}
+
+.home__slot__baynumber {
+  margin-bottom: 10px;
+}
+
+.home_ticket_buttons {
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.home_ticket_buttons_submit {
+  background-color: lightskyblue;
+}
+
+.home_ticket_buttons_cancel {
+  background-color: none;
+}
+
+.tickets__main {
+  justify-content: flex-start;
+}
+
+.ticket__list {
+  background-color: lightpink;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.ticket__item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.ticket__fields {
+  margin-bottom: 10px;
+}
+
+.navbar__main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 20px;
+  background-color: lightpink;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 60px;
+}
+
+.navbar__content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__content > div {
+  margin-right: 20px;
+}
+
+.navbar__logout {
+  background-color: lightskyblue;
+  border: none;
+  padding: 10px 15px;
+
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.spinner__main {
+  padding: 4px;
+}
+
+.spinner {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 3px solid lightgray;
+  border-top: 3px solid rgb(109, 213, 248);
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

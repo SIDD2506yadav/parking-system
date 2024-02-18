@@ -1,0 +1,3 @@
+CREATE TABLE space(id uuid PRIMARY KEY, title varchar(255), address text, meta json);
+create table slots(id uuid PRIMARY KEY, floor INT, "bayNumber" INT, status varchar(255), "spaceId" uuid REFERENCES space(id), type INT);
+create table tickets(id uuid PRIMARY KEY, status varchar(255), "entryAt" TIMESTAMP, "exitAt" TIMESTAMP, slot uuid references slots(id), "vehicleMeta" json, "spaceId" uuid REFERENCES space(id));
